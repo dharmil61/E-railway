@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+    <TextView
+        android:id="@+id/fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="49dp"
+        android:text="FirstName"
+        app:layout_constraintEnd_toStartOf="@+id/fne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="FirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:id="@+id/ln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="LastName"
+        app:layout_constraintEnd_toStartOf="@+id/lne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fn" />
+
+    <EditText
+        android:id="@+id/lne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="LastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ln"
+        app:layout_constraintTop_toBottomOf="@+id/fne" />
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="From"
+        app:layout_constraintEnd_toStartOf="@+id/cname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="17dp"
+        android:text="To"
+        app:layout_constraintBottom_toTopOf="@+id/cname"
+        app:layout_constraintStart_toEndOf="@+id/from"
+        app:layout_constraintTop_toBottomOf="@+id/lne"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/dest"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dest"
+        app:layout_constraintBottom_toTopOf="@+id/cname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/to"
+        app:layout_constraintTop_toBottomOf="@+id/lne" />
+
+    <TextView
+        android:id="@+id/college"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="62dp"
+        android:text="College"
+        app:layout_constraintEnd_toStartOf="@+id/cname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from" />
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="collegename"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/college"
+        app:layout_constraintTop_toBottomOf="@+id/dest" />
+
+    <TextView
+        android:id="@+id/classtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="328dp"
+        android:text="Class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/college" />
+
+    <Button
+        android:id="@+id/qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="149dp"
+        android:text="Generate QR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:onClick="generate"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="252dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/qr"
+        app:layout_constraintStart_toEndOf="@+id/classtext"
+        app:layout_constraintTop_toBottomOf="@+id/cname">
+
+        <RadioButton
+            android:id="@+id/class1"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="First"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="269dp"
+            />
+
+        <RadioButton
+            android:id="@+id/class2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second"
+            tools:layout_editor_absoluteX="261dp"
+            tools:layout_editor_absoluteY="266dp"
+            />
+
+    </RadioGroup>
+
+
+
+</android.support.constraint.ConstraintLayout>
